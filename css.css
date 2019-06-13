@@ -1,0 +1,48 @@
+
+body > .container {
+  padding: 60px 15px 0;
+  font-family: inherit;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+.mailing {
+	margin-right:auto;
+}
+
+.address {
+	padding-top:3em;
+	display: flex;
+  	flex-wrap: nowrap;
+}
+
+.address ul{
+	list-style-type: none;
+	margin:0px;
+	padding:0px;
+}
+
+.other {
+	display: block;
+	margin-right: 1em;
+}
+
+.other ul{
+	display: block;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.other li{
+	    display: list-item;
+		white-space: nowrap;
+
+}
