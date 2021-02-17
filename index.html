@@ -3,7 +3,7 @@
 	<head>
 	<link href="./dist/css/bootstrap.css" rel='stylesheet'>
 	<link href="css.css" rel='stylesheet'>
-<!--	<meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no'> -->
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no'>
 	<title>Surabhi Desai</title>
 	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -15,6 +15,17 @@
 
   gtag('config', 'UA-136121135-1');
 </script>
+<script>
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("navbarCollapse");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
 	
 	</head>
 	<body>
@@ -25,9 +36,9 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-		<div style="margin-left:auto; margin-right:0">
+		<!--<div style="margin-left:auto; margin-right:0">-->
         <div class="collapse navbar-collapse" id="navbarCollapse" >
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="index.html" style="font-size:1.2em;">Home<span class="sr-only">(current)</span></a>
             </li>
@@ -44,46 +55,126 @@
               <a class="nav-link" href="PGRseminar.html" style="font-size:1.2em;">PGR Seminars</a>
             </li>
           </ul>
-        </div></div>
+        </div>
       </nav>
-<h1></h1>
 
 
 <main class="container">
+<!--desktop version-->
+<div id="desktop" style="padding: 0px 0px 0px 0px;">
 
-<div class="address">
+	<div class="address">
   	<div class="mailing">
-	<img src="images/IMG_0459.JPG" class="rounded float-left" alt="..." width="30%" style="padding-right:3%; vertical-align:middle;">
-  		<ul style="vertical-align:middle;">
-  			<li>&emsp;</li>
-			<li>&emsp;</li>
-			<li><b>Email:</b> sd592[at]exeter.ac.uk</li>
-			<li><b>Office:</b> Innovation Centre, J1</li>
-  		</ul>
+		<img src="images/IMG_0459.JPG" class="rounded float-left" alt="..." style="width:25%; min-width: 260px; vertical-align:middle;">
   	</div>
-  	<div class="other" align="right" style="vertical-align:middle;">
+  	<div class="other" align="right" style="vertical-align:middle; font-size: 1rem;">
   		<ul>
-			<li>&emsp;</li>
+			<br>
   			<li><b>Address:</b></li>
   			<li>Mathematics (CEMPS)</li>
       	    <li>University of Exeter</li>
   			<li>North Park Road</li>
 			<li>Exeter</li>
-			<li>EX4 4QF</li>
+			<li>EX4 4QF</li><br>
+			<li><b>Email:</b> sd592[at]exeter.ac.uk</li>
+			<li><b>Office:</b> Innovation Centre, J1</li>
 	  		</ul>
   	</div>
   </div>
+	
 
-<p class="mt-4" style="font-size:1.1em;">I am a third year PhD student at the University of Exeter.
+<p class="mt-4" style="font-size:1rem;">I am a third year PhD student at the University of Exeter.
 I am part of the <a href="http://blogs.exeter.ac.uk/csdc/">Centre for Systems, Dynamics and Control</a>, under the supervision of 
 <a href="http://emps.exeter.ac.uk/mathematics/staff/mph204">Mark Holland</a> and <a href="https://emps.exeter.ac.uk/mathematics/staff/jt533">Jimmy Tseng</a>.
  I am interested in ergodic theory, dynamical systems and fractal geometry.
  My research is funded by EPSRC.
 </p>
 
+
 <p style="font-size:1.1rem;">
 
 </p>
+</div>
+
+<!--mobile version-->
+<div class="mobile_520px_or_less">
+<div class="container" style="padding: 30px 0px 10px;display:flex; justify-content: center; align-items: center;">	
+  		
+	<div class="container" id="img_and_address2">
+
+	<img src="images/IMG_0459.JPG" class="rounded mx-auto d-block" alt="..." style="padding: 0px 0px 0px 0px;width:68%;">
+
+	</div>
+	
+  </div>
+
+<p class="mt-4" style="font-size:1rem;">I am a third year PhD student at the University of Exeter.
+I am part of the <a href="http://blogs.exeter.ac.uk/csdc/">Centre for Systems, Dynamics and Control</a>, under the supervision of 
+<a href="http://emps.exeter.ac.uk/mathematics/staff/mph204">Mark Holland</a> and <a href="https://emps.exeter.ac.uk/mathematics/staff/jt533">Jimmy Tseng</a>.
+ I am interested in ergodic theory, dynamical systems and fractal geometry.
+ My research is funded by EPSRC.
+</p>
+
+	<div class="container" id="contact_details_container" style="text-align: left;padding:0px 0px;">
+	<address style="font-style:inherit; font-size: 1rem; margin-top: 24px;">
+		<b>Address:</b><br>
+		Mathematics (CEMPS)<br>
+		University of Exeter<br>
+  		North Park Road<br>
+		Exeter<br>
+		EX4 4QF<br><br>
+
+	<b>Email:</b> sd592[at]exeter.ac.uk<br>
+	<b>Office:</b> Innovation Centre, J1
+	</address>
+	</div>
+
+
+<p style="font-size:1.1rem;">
+
+</p>
+</div>
+
+<!--large mobile/tablet version-->
+<div class="mobile_767px_or_less">
+<div class="container" style="padding: 30px 0px 10px;display:flex; justify-content: center; align-items: center;">	
+  		
+	<div class="container" id="img_and_paragraph">
+	<div class="container" id="image_wrapper">
+	<img src="images/IMG_0459.JPG" class="rounded mx-auto d-block" alt="..." style="width:100%;">
+	</div>
+	<div class="container" id="paragraph_wrapper">
+	<p class="mt-4" style="font-size:1rem;">I am a third year PhD student at the University of Exeter.
+	I am part of the <a href="http://blogs.exeter.ac.uk/csdc/">Centre for Systems, Dynamics and Control</a>, under the supervision of 
+	<a href="http://emps.exeter.ac.uk/mathematics/staff/mph204">Mark Holland</a> and <a href="https://emps.exeter.ac.uk/mathematics/staff/jt533">Jimmy Tseng</a>.
+	I am interested in ergodic theory, dynamical systems and fractal geometry.
+	My research is funded by EPSRC.</p>
+	</div>
+	</div>
+	
+  </div>
+
+
+
+	<div class="container" id="contact_details_container2" style="text-align: left;padding:15px 0px;">
+	<address style="font-style:inherit; font-size: 1rem; margin-top: 0px;">
+		<b>Address:</b><br>
+		Mathematics (CEMPS)<br>
+		University of Exeter<br>
+  		North Park Road<br>
+		Exeter<br>
+		EX4 4QF<br><br>
+
+	<b>Email:</b> sd592[at]exeter.ac.uk<br>
+	<b>Office:</b> Innovation Centre, J1
+	</address>
+	</div>
+
+
+<p style="font-size:1.1rem;">
+
+</p>
+</div>
 
 
 </main>

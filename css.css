@@ -1,9 +1,9 @@
-body{
+body {
   overflow-y: scroll;
 }
 
 body > .container {
-  padding: 60px 15px 0;
+  padding: 80px 40px 0;
   font-family: inherit;
 }
 
@@ -49,3 +49,55 @@ code {
 		white-space: nowrap;
 
 }
+/*/for image with paragraph side by side in a single container/*/
+#img_and_paragraph{
+	display: flex;
+  	flex-wrap: nowrap;
+	padding: 0px 0px; 
+	justify-content: center; 
+	align-items: center;
+}
+#img_and_paragraph #image_wrapper{
+	padding: 0px 10px 0px 0px; 
+	width:100%;
+}
+
+#img_and_paragraph #paragraph_wrapper{
+	padding: 0px 0px 0px 10px;
+	width:100%;
+}
+/*/for image with contact details/address side by side in a single container/*/
+#img_and_address{
+	display:flex;
+  	flex-wrap: nowrap;
+}
+
+#img_and_address2{
+	display:flex;
+  	flex-wrap: nowrap;
+}
+
+/*/default to desktop i.e. mobile view off/*/
+.mobile_520px_or_less{
+	display: none;
+}
+/*/default to desktop i.e. large mobile/tablet view off/*/
+.mobile_767px_or_less{
+	display: none;
+}
+
+/*/specify conditions for mobile view/*/
+@media only screen and (max-device-width: 520px) {
+        .mobile_520px_or_less{display: block;}
+		.mobile_767px_or_less{display: none;}		
+        #desktop {display: none;}
+    }
+	
+/*/specify conditions for large mobile/tablet view/*/
+@media only screen and (max-device-width: 767px)and (min-device-width: 521px) {
+        .mobile_767px_or_less{display: block;}
+		.mobile_520px_or_less{display: none;}		
+        #desktop {display: none;}
+    } 
+
+
