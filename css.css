@@ -47,7 +47,13 @@ code {
 .other li{
 	    display: list-item;
 		white-space: nowrap;
+}
+.talk_heading{
+	padding-left: 20px;
+}
 
+.talk_heading > .btn {
+	padding-left: 0px;
 }
 /*/for image with paragraph side by side in a single container/*/
 #img_and_paragraph{
